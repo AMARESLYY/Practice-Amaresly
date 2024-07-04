@@ -56,7 +56,7 @@ This project is a social profile platform built with Next.js 14 and Supabase. Th
 2. Navigate to the project directory:
    ```
    cd social-profile-project
-   \`\`\`
+   ```
 3. Install dependencies:
    ```
    npm install
