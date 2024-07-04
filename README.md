@@ -7,6 +7,7 @@ This project is a social profile platform built with Next.js 14 and Supabase. Th
 
 1. **User Authentication:**
    - Login and registration functionality.
+   - Google & github OAuth functionality.
    - Edit profile details including username, bio, and profile picture.
 
 2. **Project Management:**
@@ -21,16 +22,11 @@ This project is a social profile platform built with Next.js 14 and Supabase. Th
 4. **Social Features:**
    - Follow other users to see their projects in your feed.
    - Share projects via social media or direct link.
-   - Save favorite projects to personal collections.
 
 5. **Project Discovery:**
    - Search for projects by keywords.
    - Browse projects by categories or tags.
    - View trending projects based on likes and comments.
-
-6. **Notification System:**
-   - Receive notifications for new likes, comments, and followers.
-   - Customizable notification settings.
 
 7. **Responsive Design:**
    - Ensure the platform is fully responsive and works on all devices.
@@ -39,10 +35,6 @@ This project is a social profile platform built with Next.js 14 and Supabase. Th
 8. **Accessibility:**
    - Implement accessibility best practices to make the platform usable for everyone.
    - Provide alternative text for images and videos.
-
-9. **Profile Customization:**
-   - Allow users to customize their profile layout and appearance.
-   - Add personal blogs or additional sections to the profile.
 
 10. **Admin Dashboard:**
     - Admin panel for managing users and content.
