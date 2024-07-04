@@ -62,12 +62,12 @@ This project is a social profile platform built with Next.js 14 and Supabase. Th
    npm install
    ```
 4. Set up environment variables by creating a .env.local file and adding your Supabase credentials:
-   ```
+   ```Dotenv
    NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
    NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
    ```
 5. Run the development server:
-   ```Dotenv
+   ```
    npm run dev
    ```
 6. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
