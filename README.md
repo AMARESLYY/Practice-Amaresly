@@ -1,5 +1,5 @@
 
-# Social Profile Project
+# Practice Pinterest Clone
 
 This project is a social profile platform built with Next.js 14 and Supabase. The UI is created using shadcn-ui and Tailwind CSS. The platform allows users to share projects with images or videos, similar to Pinterest. 
 
@@ -58,39 +58,29 @@ This project is a social profile platform built with Next.js 14 and Supabase. Th
 ## Setup and Installation
 
 1. Clone the repository:
-   \`\`\`sh
+   \`\`\`
    git clone https://github.com/yourusername/social-profile-project.git
    \`\`\`
 2. Navigate to the project directory:
-   \`\`\`sh
+   \`\`\`
    cd social-profile-project
    \`\`\`
 3. Install dependencies:
-   \`\`\`sh
+   \`\`\`
    npm install
    \`\`\`
 4. Set up environment variables by creating a .env.local file and adding your Supabase credentials:
-   \`\`\`sh
+   \`\`\`
    NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
    NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
    \`\`\`
 5. Run the development server:
-   \`\`\`sh
+   \`\`\`
    npm run dev
    \`\`\`
 6. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Contribution Guidelines
-
-We welcome contributions to improve this project! To contribute, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch (\`git checkout -b feature/your-feature\`).
-3. Make your changes and commit them (\`git commit -m 'Add some feature'\`).
-4. Push to the branch (\`git push origin feature/your-feature\`).
-5. Open a pull request.
-
-## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
@@ -100,10 +90,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - [Supabase](https://supabase.io/)
 - [shadcn-ui](https://github.com/shadcn/ui)
 - [Tailwind CSS](https://tailwindcss.com/)
-
-## Contact
-
-For any inquiries or feedback, please contact [your-email@example.com].
 
 ---
 
