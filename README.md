@@ -50,15 +50,15 @@ This project is a social profile platform built with Next.js 14 and Supabase. Th
 ## Setup and Installation
 
 1. Clone the repository:
-   ```
+   ```Shell
    git clone https://github.com/{yourusername}/social-profile-project.git
-   ```
+   ```Shell
 2. Navigate to the project directory:
    ```
    cd social-profile-project
-   ```
+   ```Shell
 3. Install dependencies:
-   ```
+   ```Shell
    npm install
    ```
 4. Set up environment variables by creating a .env.local file and adding your Supabase credentials:
@@ -67,7 +67,7 @@ This project is a social profile platform built with Next.js 14 and Supabase. Th
    NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
    ```
 5. Run the development server:
-   ```
+   ```Shell
    npm run dev
    ```
 6. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
