@@ -52,11 +52,11 @@ This project is a social profile platform built with Next.js 14 and Supabase. Th
 1. Clone the repository:
    ```Shell
    git clone https://github.com/{yourusername}/social-profile-project.git
-   ```Shell
-2. Navigate to the project directory:
    ```
-   cd social-profile-project
+2. Navigate to the project directory:
    ```Shell
+   cd social-profile-project
+   ```
 3. Install dependencies:
    ```Shell
    npm install
