@@ -79,8 +79,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Acknowledgements
 
 - [Next.js](https://nextjs.org/)
-- [Supabase](https://supabase.io/)
-- [shadcn-ui](https://github.com/shadcn/ui)
+- [Supabase](https://supabase.com/)
+- [shadcn-ui]([https://github.com/shadcn/ui](https://ui.shadcn.com/))
 - [Tailwind CSS](https://tailwindcss.com/)
 
 ---
