@@ -72,10 +72,6 @@ This project is a social profile platform built with Next.js 14 and Supabase. Th
    ```
 6. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Contribution Guidelines
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgements
 
 - [Next.js](https://nextjs.org/)
