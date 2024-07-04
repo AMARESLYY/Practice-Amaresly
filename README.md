@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Social Profile Project
 
-First, run the development server:
+This project is a social profile platform built with Next.js 14 and Supabase. The UI is created using shadcn-ui and Tailwind CSS. The platform allows users to share projects with images or videos, similar to Pinterest. 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Objectives
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **User Authentication:**
+   - Login and registration functionality.
+   - Edit profile details including username, bio, and profile picture.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Project Management:**
+   - Upload projects with title, description, image or video.
+   - Edit existing projects.
+   - Delete projects.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. **User Interaction:**
+   - Like other users' projects.
+   - Comment on other users' projects.
 
-## Learn More
+4. **Social Features:**
+   - Follow other users to see their projects in your feed.
+   - Share projects via social media or direct link.
+   - Save favorite projects to personal collections.
 
-To learn more about Next.js, take a look at the following resources:
+5. **Project Discovery:**
+   - Search for projects by keywords.
+   - Browse projects by categories or tags.
+   - View trending projects based on likes and comments.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+6. **Notification System:**
+   - Receive notifications for new likes, comments, and followers.
+   - Customizable notification settings.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+7. **Responsive Design:**
+   - Ensure the platform is fully responsive and works on all devices.
+   - Optimize performance for mobile users.
 
-## Deploy on Vercel
+8. **Accessibility:**
+   - Implement accessibility best practices to make the platform usable for everyone.
+   - Provide alternative text for images and videos.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+9. **Profile Customization:**
+   - Allow users to customize their profile layout and appearance.
+   - Add personal blogs or additional sections to the profile.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+10. **Admin Dashboard:**
+    - Admin panel for managing users and content.
+    - Monitor user activity and manage reported content.
+
+## Technologies Used
+
+- **Next.js 14**: Framework for building server-side rendered React applications.
+- **Supabase**: Backend as a service providing authentication, database, and storage.
+- **shadcn-ui**: UI components library.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+
+## Setup and Installation
+
+1. Clone the repository:
+   \`\`\`sh
+   git clone https://github.com/yourusername/social-profile-project.git
+   \`\`\`
+2. Navigate to the project directory:
+   \`\`\`sh
+   cd social-profile-project
+   \`\`\`
+3. Install dependencies:
+   \`\`\`sh
+   npm install
+   \`\`\`
+4. Set up environment variables by creating a .env.local file and adding your Supabase credentials:
+   \`\`\`sh
+   NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+   \`\`\`
+5. Run the development server:
+   \`\`\`sh
+   npm run dev
+   \`\`\`
+6. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Contribution Guidelines
+
+We welcome contributions to improve this project! To contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (\`git checkout -b feature/your-feature\`).
+3. Make your changes and commit them (\`git commit -m 'Add some feature'\`).
+4. Push to the branch (\`git push origin feature/your-feature\`).
+5. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+- [Next.js](https://nextjs.org/)
+- [Supabase](https://supabase.io/)
+- [shadcn-ui](https://github.com/shadcn/ui)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+## Contact
+
+For any inquiries or feedback, please contact [your-email@example.com].
+
+---
+
+Happy coding!
