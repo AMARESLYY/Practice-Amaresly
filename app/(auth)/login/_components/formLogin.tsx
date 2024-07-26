@@ -7,9 +7,12 @@ import { LoginWithEmailPassword } from "@/providers/supabase/actions/authActions
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { toast } from "sonner";
+import Image from "next/image";
+import { createClient } from "@/providers/supabase/client";
 
 export const FormLogin = () => {
   const router = useRouter();
+  const supabase = createClient();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -35,6 +38,23 @@ export const FormLogin = () => {
       toast.success("Bienvienid@ a Artest");
       router.push("/");
     }
+  }
+
+  async function handleGitHubSIgnin() {
+    const { data, error } = await supabase.auth.signInWithOAuth({
+      provider: 'github',
+      options: {
+        redirectTo: `http://localhost:3000/auth/callback`,
+      },
+    })
+  }
+  async function handleGoogleSIgnin() {
+    const { data, error } = await supabase.auth.signInWithOAuth({
+      provider: "google",
+      options: {
+        redirectTo: `http://localhost:3000/auth/callback`,
+      },
+    });
   }
 
   return (
@@ -80,6 +100,43 @@ export const FormLogin = () => {
           <Label className="text-muted-foreground antialiased hover:text-foreground cursor-pointer text-xs">
             ¿Olvidaste tu contraseña?
           </Label>
+          <div className="h-full w-full flex flex-cols gap-5  ">
+              <Button
+                  onClick={handleGitHubSIgnin}
+                  variant="secondary"
+                  size="default"
+                  className="flex items-center gap-x-2 text-black border hover:border-gray-600 w-full px-4 py-2 rounded-md justify-between"
+                  type="button"
+              >
+                  Log with GitHub
+                  <div className="relative w-6 h-6 ml-2 rounded-full">
+                    <Image
+                        src="/git.png"
+                        layout="fill"
+                        objectFit="contain"
+                        alt="Google logo"
+                    />
+                  </div>
+              </Button>
+
+              <Button
+               onClick={handleGoogleSIgnin}
+                variant="secondary"
+                size="default"
+                className="flex items-center gap-x-2 text-black border hover:border-gray-600 w-full px-4 py-2 rounded-md justify-between bg-white"
+                type="button"
+            >
+                Log with Google
+                <div className="relative w-6 h-6 ml-2 rounded-full">
+                  <Image
+                      src="/google.png"
+                      layout="fill"
+                      objectFit="contain"
+                      alt="Google logo"
+                  />
+                </div>
+            </Button>
+          </div>
         </div>
         <Button
           variant={"default"}

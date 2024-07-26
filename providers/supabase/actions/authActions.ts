@@ -31,3 +31,10 @@ export async function LoginWithEmailPassword(email: string, password: string) {
 
   return { data, error };
 }
+
+
+export async function LoginWithGithub() {
+  const { data, error } = await supabase.auth.signInWithOAuth({
+    provider: 'github'
+  })
+}
