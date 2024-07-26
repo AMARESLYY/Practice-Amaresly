@@ -4,12 +4,15 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { CreateUserWithEmailPassword } from "@/providers/supabase/actions/authActions";
+import { useRouter } from 'next/navigation';
 import React, { useState } from "react";
+import { X } from 'lucide-react';
 import { toast } from "sonner";
 
 export const FormRegister = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const router = useRouter();
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -36,7 +39,7 @@ export const FormRegister = () => {
   }
 
   return (
-    <div className="w-full max-w-lg rounded-xl bg-white border h-fit p-5 md:p-7 lg:p-10 flex flex-cl gap-7 lg:gap-10 flex-col">
+    <div className="w-full max-w-lg rounded-xl h-fit p-5 md:p-7 lg:p-10 flex flex-cl gap-7 lg:gap-10 flex-col">
       <h1 className="text-xl lg:text-2xl antialiased text-muted-foreground">
         Crea tu cuenta en{" "}
         <span className="font-bold text-foreground">Artest</span>

@@ -58,7 +58,7 @@ export const FormLogin = () => {
   }
 
   return (
-    <div className="w-full max-w-lg rounded-xl bg-white border h-fit p-5 md:p-7 lg:p-10 flex flex-cl gap-7 lg:gap-10 flex-col">
+    <div className="w-full max-w-lg rounded-xl h-fit p-5 md:p-7 lg:p-10 flex flex-cl gap-7 lg:gap-10 flex-col">
       <h1 className="text-xl lg:text-2xl antialiased text-muted-foreground">
         Inicia sesión en{" "}
         <span className="font-bold text-foreground">Artest</span>

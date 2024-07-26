@@ -1,3 +1,4 @@
+
 import { createClient } from "@/providers/supabase/server";
 import { Button } from "../ui/button";
 import {
@@ -16,7 +17,10 @@ import {
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
 import { toast } from "sonner";
+import Image from "next/image";
 import { LogOutButton } from "./logOutButton";
+import { FormModal } from "../modals/FormRegister";
+import { FormLoginModal } from "../modals/FormLog";
 
 export const HeaderMain = async ({
   user,
@@ -25,6 +29,7 @@ export const HeaderMain = async ({
   user: any;
   cookie: ReadonlyRequestCookies;
 }) => {
+
   const supabase = createClient(cookie);
   const userId = user?.id;
 
@@ -33,10 +38,20 @@ export const HeaderMain = async ({
     .select("*")
     .eq("id", userId)
     .single();
-
+    
   return (
-    <header className="w-full h-14 items-center px-5 md:px-7 lg:px-14 xl:px-36 shadow-sm bg-transparent flex justify-between">
-      <h1 className="text-2xl antialiased font-bold text-primary">Artest</h1>
+    <header className="w-full h-10 items-center px-10 py-10 flex justify-between">
+      <div className="w-fit h-fit flex flex-cols justify-center items-center gap-4">
+      <div className="size-14 aspect-video overflow-hidden relative">
+        <Image
+          src="/p.png"
+          layout="fill"
+          objectFit="contain"
+          alt="logo"
+          /> 
+      </div>
+      <h1 className="italic text-2xl antialiased font-bold text-primary">Artest</h1>
+      </div>
       {user ? (
         <div className="w-fit items-center justify-end flex gap-x-2">
           <Button variant={"default"} size={"sm"}>
@@ -67,12 +82,8 @@ export const HeaderMain = async ({
         </div>
       ) : (
         <div className="w-fit items-center justify-end flex gap-x-2">
-          <Button asChild variant={"outline"} size={"sm"}>
-            <Link href={"/login"}>Inicia sesión</Link>
-          </Button>
-          <Button asChild variant={"default"} size={"sm"}>
-            <Link href={"/register"}>Regístrate</Link>
-          </Button>
+            <FormLoginModal/>
+           <FormModal/>
         </div>
       )}
     </header>
