@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { CreateUserWithEmailPassword } from "@/providers/supabase/actions/authActions";
-import { useRouter } from 'next/navigation';
+import { useRouter } from "next/navigation";
 import React, { useState } from "react";
-import { X } from 'lucide-react';
+import { X } from "lucide-react";
 import { toast } from "sonner";
 
 export const FormRegister = () => {
@@ -23,7 +23,13 @@ export const FormRegister = () => {
     }
 
     toast.loading("Cargando...");
-    const { data, error } = await CreateUserWithEmailPassword(email, password);
+    const { data, error } = await CreateUserWithEmailPassword(
+      email,
+      password,
+      "José",
+      "Campillo"
+    );
+    console.log(data, error);
 
     if (error) {
       toast.dismiss();

@@ -13,11 +13,19 @@ export async function getUserbyId(id: string) {
 
 export async function CreateUserWithEmailPassword(
   email: string,
-  password: string
+  password: string,
+  fname: string,
+  lname: string
 ) {
   const { data, error } = await supabase.auth.signUp({
     email: email,
     password: password,
+    options: {
+      data: {
+        fname: fname,
+        lname: lname,
+      },
+    },
   });
 
   return { data, error };
@@ -31,4 +39,3 @@ export async function LoginWithEmailPassword(email: string, password: string) {
 
   return { data, error };
 }
-
