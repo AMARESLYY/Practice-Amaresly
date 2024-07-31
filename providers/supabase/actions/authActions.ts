@@ -31,3 +31,4 @@ export async function LoginWithEmailPassword(email: string, password: string) {
 
   return { data, error };
 }
+
